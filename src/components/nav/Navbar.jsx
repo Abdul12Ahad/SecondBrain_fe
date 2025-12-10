@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Navbar.css';
 import { getImageUrl } from "../../utils";
-export const Navbar = () => {
+const Navbar = () => {
 
     const [menuOpen, setMenuopen] = useState(false);
 
@@ -15,11 +15,13 @@ export const Navbar = () => {
             <img className="menuBtn" src={menuOpen ? getImageUrl("nav/closeIcon.png") : getImageUrl("nav/menuIcon.png")} alt="menu-button"  onClick={() => setMenuopen(!menuOpen)}/>
             <ul className={`menuItems ${menuOpen ? 'menuOpen' : ''}`} onClick={() => setMenuopen(false)}>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#Preview">Preview</a></li>
-                <li><a href="#Coming-soon">Coming soon</a></li>
+                <li><a href="#preview">Preview</a></li>
+                <li><a href="#About">About</a></li>
             </ul>
         </div>
     </nav>
 
     );
 }
+
+export default Navbar;

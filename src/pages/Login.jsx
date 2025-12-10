@@ -11,13 +11,15 @@ const Login = () => {
   const { setUser } = useAuth();
   const navigate = useNavigate();
 
-  const handleChange = (e) =>
+  const handleChange = (e) => 
     setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("first");
     try {
-      const res = await axios.post("/auth/login", form);
+      const res = await axios.post("/api/auth/login", form, { withCredentials: true });
+    console.log("second");
       setUser(res.data.user);
       navigate("/dashboard");
     } catch (err) {

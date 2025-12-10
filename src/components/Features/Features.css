@@ -1,4 +1,4 @@
-.card {
+.feat {
   background: linear-gradient(135deg, #6F2232, #950740);
   color: white;
   border-radius: 15px;
@@ -10,22 +10,22 @@
   text-align: center;
 }
 
-.card:hover {
+.feat:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(149, 7, 64, 0.5);
 }
 
-.card-title {
+.feat-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.card-description {
+.feat-description {
   font-size: 16px;
   color: #f0dada;
 }
 
-.card-icons {
+.feat-icons {
   font-size: 32px;
   margin-top: 15px;
 }

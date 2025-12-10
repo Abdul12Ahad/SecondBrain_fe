@@ -3,10 +3,10 @@ import "./Features.css";
 
 export const Features = ({title,description,icon}) => {
     return (
-        <div className="card" id="features">
-            <h3 className="card-title">{title}</h3>
-            <p className="card-description">{description}</p>
-            <p className="card-icons">{icon}</p>
+        <div className="feat" id="features">
+            <h3 className="feat-title">{title}</h3>
+            <p className="feat-description">{description}</p>
+            <p className="feat-icons">{icon}</p>
         </div>
     );
 }

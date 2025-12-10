@@ -16,7 +16,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       console.log("request sent")
-      const res = await axios.post("/api/auth/signup", form);
+      const res = await axios.post("/api/auth/signup", form, { withCredentials: true });
       setUser(res.data.user);
       console.log("before navigation")
       navigate("/dashboard");

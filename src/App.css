@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
 }
 
-.card-container{
+.feat-container{
   display: flex;
   justify-content: center;    
   align-items: center;        
@@ -19,3 +19,8 @@ body{
   background-color: #1A1A1D;  
   padding: 15px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+

@@ -1,0 +1,244 @@
+/* --- SEARCH & FILTER --- */
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin-top: 100px;
+}
+
+.ser {
+  background-color: white;
+  color: black;
+  width: 280px;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.filter-dropdown {
+  width: 200px;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.filter-dropdown:focus,
+.ser:focus {
+  outline: none;
+  border-color: #C3073F;
+  box-shadow: 0 0 5px rgba(195, 7, 63, 0.5);
+}
+
+/* --- ADD BUTTON --- */
+.add-btn-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-btn {
+  background-color: #C3073F;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.add-btn:hover {
+  background-color: #a90534;
+  transform: scale(1.05);
+}
+
+/* --- POPUP FORM --- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.form-popup {
+  background-color: #C3073F;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 420px;
+  color: white;
+  z-index: 1001;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lab {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.inp {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;  /* softer border for white background */
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;  /* white background */
+  color: black;             /* black text for contrast */
+  box-sizing: border-box;
+}
+
+.inp::placeholder {
+  color: rgba(0,0,0,0.5);  /* placeholder in dark gray */
+}
+
+.inp:focus {
+  border-color: #C3073F;
+  outline: none;
+  box-shadow: 0 0 5px rgba(195, 7, 63, 0.5);
+}
+
+
+/* --- FORM BUTTON --- */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ddd;
+  transform: scale(1.2);
+}
+
+/* --- CARD LIST --- */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+/* --- CARD ITEM --- */
+.card {
+  background-color: #C3073F;
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px; /* slightly smaller */
+}
+
+/* --- PLATFORM ICON & TITLE --- */
+.header-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.platform-icon {
+  width: 32px; /* moderate */
+  height: 32px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+/* --- CARD CONTENT --- */
+.card p {
+  margin: 4px 0;
+  line-height: 1.4;
+  font-size: 13px;
+}
+
+.timestamp {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-top: 6px;
+}
+
+/* --- BUTTONS INSIDE CARD --- */
+.edit-btn-wrapper {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.copy-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn img,
+.copy-btn img,
+.delete-btn img {
+  width: 24px; /* bigger moderate size */
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.edit-btn img:hover,
+.copy-btn img:hover,
+.delete-btn img:hover {
+  transform: scale(1.2);
+}
+
+/* --- EDIT INPUTS --- */
+.card input.inp {
+  margin-bottom: 8px;
+}

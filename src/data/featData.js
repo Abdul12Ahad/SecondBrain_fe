@@ -1,4 +1,4 @@
-export const cardsData = [
+export const featData = [
     {
         title : "Save Anything",
         description : "From videos to threads to docs.",
