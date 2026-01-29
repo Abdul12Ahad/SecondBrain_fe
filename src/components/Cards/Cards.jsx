@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Cards.css";
 import { getImageUrl } from "../../utils";
-import axios from 'axios';
+import api from "../../api/api";
 
-const API = "https://sebrain.netlify.app/api/cards";
+const API = "https://secondbrain-be-bl9z.onrender.com/api/cards";
+
 
 export const Cards = () => {
   const [formdata, setFormdata] = useState({
@@ -32,7 +33,7 @@ export const Cards = () => {
   ];
 
   useEffect(() => {
-  axios.get(API, { withCredentials: true })
+  api.get(API, { withCredentials: true })
     .then(res => setCards(res.data))
     .catch(err => {
       console.error('GET error:', err.message);

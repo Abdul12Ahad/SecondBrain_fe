@@ -11,10 +11,10 @@ const AppNavbar = () => {
 
   const handleLogout = async () => {
     try {
-      await fetch("https://sebrain.netlify.app/api/auth/logout", {
-        method: "POST",
-        credentials: "include",
-      });
+      await fetch("https://secondbrain-be-bl9z.onrender.com/api/auth/logout", {
+  credentials: "include",
+});
+
     } catch (err) {
       console.error("Logout failed:", err);
     } finally {
