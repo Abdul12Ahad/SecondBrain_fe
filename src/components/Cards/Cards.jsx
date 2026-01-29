@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Cards.css";
 import { getImageUrl } from "../../utils";
-import api from "../../api/api";
+import api from "../../api";
 
 const API = "https://secondbrain-be-bl9z.onrender.com/api/cards";
 
