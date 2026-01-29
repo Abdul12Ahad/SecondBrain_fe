@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://sebrain.netlify.app/',
+  baseURL: 'https://secondbrain-be-bl9z.onrender.com',
   withCredentials: true,
 });
 
