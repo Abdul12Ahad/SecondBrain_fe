@@ -64,7 +64,7 @@ export const Cards = () => {
 
       const newCard = { ...formdata, timestamp, isEdited: false };
 
-      axios.post(API, newCard, { withCredentials: true })
+      api.post(API, newCard, { withCredentials: true })
         .then(res => {
           setCards(prev => [...prev, res.data]);
           setFormdata({ platform: "YouTube", title: "", url: "", notes: "", tags: "" });
@@ -96,7 +96,7 @@ export const Cards = () => {
 
     const updatedCard = { ...editData, timestamp, isEdited: true };
 
-    axios.put(`${API}/${updatedCard._id}`, updatedCard, { withCredentials: true })
+    api.put(`${API}/${updatedCard._id}`, updatedCard, { withCredentials: true })
       .then(res => {
         const updatedList = [...cards];
         updatedList[editIndex] = res.data;
@@ -108,7 +108,7 @@ export const Cards = () => {
 
   const handleDelete = (index) => {
     const cardToDelete = cards[index];
-    axios.delete(`${API}/${cardToDelete._id}`, { withCredentials: true })
+    api.delete(`${API}/${cardToDelete._id}`, { withCredentials: true })
       .then(() => {
         setCards(cards.filter((_, i) => i !== index));
       })
