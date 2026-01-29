@@ -27,7 +27,7 @@ const Login = () => {
   };
 
   const handleGoogle = () => {
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "https://sebrain.netlify.app/api/auth/google";
   };
 
   return (

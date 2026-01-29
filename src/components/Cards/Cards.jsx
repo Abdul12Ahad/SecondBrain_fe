@@ -3,7 +3,7 @@ import "./Cards.css";
 import { getImageUrl } from "../../utils";
 import axios from 'axios';
 
-const API = "http://localhost:5000/api/cards";
+const API = "https://sebrain.netlify.app/api/cards";
 
 export const Cards = () => {
   const [formdata, setFormdata] = useState({

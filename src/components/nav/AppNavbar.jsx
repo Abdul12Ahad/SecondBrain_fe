@@ -11,7 +11,7 @@ const AppNavbar = () => {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:5000/api/auth/logout", {
+      await fetch("https://sebrain.netlify.app/api/auth/logout", {
         method: "POST",
         credentials: "include",
       });
