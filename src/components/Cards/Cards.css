@@ -231,3 +231,87 @@
 .card input.inp {
   margin-bottom: 8px;
 }
+
+@media (max-width: 768px) {
+  .search-filter-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 80px;
+  }
+
+  .ser,
+  .filter-dropdown {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .card-list {
+    grid-template-columns: 1fr;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .add-btn {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+
+  .edit-btn img,
+  .copy-btn img,
+  .delete-btn img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-filter-container {
+    margin-top: 70px;
+  }
+
+  .form-popup {
+    width: 95%;
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .lab {
+    font-size: 13px;
+  }
+
+  .inp {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .card {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .timestamp {
+    font-size: 11px;
+  }
+
+  .edit-btn-wrapper {
+    gap: 16px;
+  }
+}
