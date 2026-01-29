@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import axios from "../api";
+import api from "../api";
 
 const AuthContext = createContext();
 
@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const fetchUser = async () => {
     try {
       console.log("Fetching user...");
-      const res = await axios.get("/api/auth/me", { withCredentials: true });
+      const res = await api.get("/api/auth/me", { withCredentials: true });
       setUser(res.data.user);
     } catch (err) {
       console.error("Error fetching user:", err);
