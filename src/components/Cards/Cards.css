@@ -234,7 +234,7 @@
 
 @media (max-width: 900px) {
   .search-filter-container {
-    margin-top: 80px;
+    margin-top: 130px;
     gap: 12px;
   }
 
@@ -247,6 +247,7 @@
 
 @media (max-width: 768px) {
   .search-filter-container {
+    margin-top: 130px;
     flex-direction: column;
     align-items: stretch;
     padding: 12px;
@@ -280,7 +281,7 @@
 
 @media (max-width: 480px) {
   .search-filter-container {
-    margin-top: 70px;
+    margin-top: 130px;
     gap: 8px;
   }
 
