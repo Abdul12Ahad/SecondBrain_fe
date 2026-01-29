@@ -232,28 +232,31 @@
   margin-bottom: 8px;
 }
 
+@media (max-width: 900px) {
+  .search-filter-container {
+    margin-top: 80px;
+    gap: 12px;
+  }
+
+  .card-list {
+    width: 95%;
+    padding: 16px;
+    gap: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .search-filter-container {
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    margin-top: 80px;
+    align-items: stretch;
+    padding: 12px;
   }
 
   .ser,
   .filter-dropdown {
     width: 100%;
-    max-width: 360px;
-  }
-
-  .card-list {
-    grid-template-columns: 1fr;
-    width: 95%;
-    padding: 10px;
-  }
-
-  .card {
-    padding: 14px;
+    font-size: 15px;
+    padding: 10px 12px;
   }
 
   .add-btn {
@@ -261,41 +264,8 @@
     font-size: 15px;
   }
 
-  .edit-btn img,
-  .copy-btn img,
-  .delete-btn img {
-    width: 28px;
-    height: 28px;
-  }
-}
-
-@media (max-width: 480px) {
-  .search-filter-container {
-    margin-top: 70px;
-  }
-
-  .form-popup {
-    width: 95%;
-    padding: 20px;
-    gap: 12px;
-  }
-
-  .lab {
-    font-size: 13px;
-  }
-
-  .inp {
-    font-size: 13px;
-    padding: 10px;
-  }
-
-  .btn {
-    font-size: 15px;
-    padding: 12px;
-  }
-
   .card {
-    padding: 12px;
+    padding: 14px;
     border-radius: 8px;
   }
 
@@ -304,7 +274,49 @@
   }
 
   .card p {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-filter-container {
+    margin-top: 70px;
+    gap: 8px;
+  }
+
+  .add-btn-container {
+    margin-top: 14px;
+  }
+
+  .add-btn {
+    width: 100%;
+    max-width: 260px;
+    padding: 11px 0;
+    font-size: 14px;
+  }
+
+  .card-list {
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 12px;
+    min-height: auto;
+  }
+
+  .platform-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .title {
+    font-size: 13.5px;
+  }
+
+  .card p {
     font-size: 12px;
+    line-height: 1.35;
   }
 
   .timestamp {
@@ -313,5 +325,12 @@
 
   .edit-btn-wrapper {
     gap: 16px;
+  }
+
+  .edit-btn img,
+  .copy-btn img,
+  .delete-btn img {
+    width: 26px;
+    height: 26px;
   }
 }
