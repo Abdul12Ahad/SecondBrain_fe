@@ -1,4 +1,3 @@
-/* --- SEARCH & FILTER --- */
 .search-filter-container {
   display: flex;
   justify-content: center;
@@ -36,7 +35,6 @@
   box-shadow: 0 0 5px rgba(195, 7, 63, 0.5);
 }
 
-/* --- ADD BUTTON --- */
 .add-btn-container {
   width: 100%;
   text-align: center;
@@ -60,7 +58,6 @@
   transform: scale(1.05);
 }
 
-/* --- POPUP FORM --- */
 .overlay {
   position: fixed;
   top: 0;
@@ -99,16 +96,16 @@
 .inp {
   width: 100%;
   padding: 10px 12px;
-  border: 1px solid #ccc;  /* softer border for white background */
+  border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
-  background-color: white;  /* white background */
-  color: black;             /* black text for contrast */
+  background-color: white;
+  color: black;             
   box-sizing: border-box;
 }
 
 .inp::placeholder {
-  color: rgba(0,0,0,0.5);  /* placeholder in dark gray */
+  color: rgba(0,0,0,0.5);  
 }
 
 .inp:focus {
@@ -117,8 +114,6 @@
   box-shadow: 0 0 5px rgba(195, 7, 63, 0.5);
 }
 
-
-/* --- FORM BUTTON --- */
 .btn {
   width: 100%;
   padding: 14px;
@@ -151,7 +146,6 @@
   transform: scale(1.2);
 }
 
-/* --- CARD LIST --- */
 .card-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -161,7 +155,6 @@
   margin: auto;
 }
 
-/* --- CARD ITEM --- */
 .card {
   background-color: #C3073F;
   color: white;
@@ -172,10 +165,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 150px; /* slightly smaller */
+  min-height: 150px;
 }
 
-/* --- PLATFORM ICON & TITLE --- */
 .header-row {
   display: flex;
   flex-direction: column;
@@ -185,7 +177,7 @@
 }
 
 .platform-icon {
-  width: 32px; /* moderate */
+  width: 32px;
   height: 32px;
 }
 
@@ -195,7 +187,6 @@
   margin-top: 4px;
 }
 
-/* --- CARD CONTENT --- */
 .card p {
   margin: 4px 0;
   line-height: 1.4;
@@ -208,7 +199,6 @@
   margin-top: 6px;
 }
 
-/* --- BUTTONS INSIDE CARD --- */
 .edit-btn-wrapper {
   display: flex;
   gap: 12px;
@@ -227,7 +217,7 @@
 .edit-btn img,
 .copy-btn img,
 .delete-btn img {
-  width: 24px; /* bigger moderate size */
+  width: 24px; 
   height: 24px;
   transition: transform 0.2s ease;
 }
@@ -238,7 +228,6 @@
   transform: scale(1.2);
 }
 
-/* --- EDIT INPUTS --- */
 .card input.inp {
   margin-bottom: 8px;
 }

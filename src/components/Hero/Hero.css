@@ -71,7 +71,6 @@
   }
 }
 
-/* Responsive tweaks */
 @media screen and (max-width: 830px) {
   .hero {
     margin-top: 200px;

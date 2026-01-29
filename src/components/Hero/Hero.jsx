@@ -17,6 +17,5 @@ export const Hero = () => {
                 </Link>
             </div>
         </section>
-        
     )
 }

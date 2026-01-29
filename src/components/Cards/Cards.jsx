@@ -32,7 +32,7 @@ export const Cards = () => {
   ];
 
   useEffect(() => {
-  axios.get(API, { withCredentials: true }) // send cookies
+  axios.get(API, { withCredentials: true })
     .then(res => setCards(res.data))
     .catch(err => {
       console.error('GET error:', err.message);
